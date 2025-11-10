@@ -1,0 +1,209 @@
+/* ========== GLOBAL STYLES ========== */
+:root {
+    --primary-blue: #0984e3;
+    --blue-light: #74b9ff;
+    --bg-light: #f5f6fa;
+    --text-dark: #2d3436;
+    --card-bg: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.08);
+    --accent-cyan: #00d4ff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* ========== HEADER / NAVBAR ========== */
+  header.navbar {
+    background-color: var(--card-bg);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    font-weight: 600;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  #logoutBtn {
+    padding: 8px 16px;
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #logoutBtn:hover {
+    background-color: var(--blue-light);
+  }
+  
+  /* ========== MAIN LAYOUT ========== */
+  .dashboard-container {
+    flex: 1;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* ========== WELCOME CARD ========== */
+  .welcome-card {
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 20px var(--card-shadow);
+    border-radius: 16px;
+    padding: 24px 32px;
+    text-align: center;
+  }
+  
+  .welcome-card h2 {
+    font-size: 1.4rem;
+    color: var(--primary-blue);
+    margin-bottom: 8px;
+  }
+  
+  .welcome-card p {
+    font-size: 1rem;
+    color: var(--text-dark);
+  }
+  
+  /* ========== TASK SECTION ========== */
+  .task-section {
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 20px var(--card-shadow);
+    border-radius: 16px;
+    padding: 24px 32px;
+  }
+  
+  .task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .task-header h3 {
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+  }
+  
+  .add-task {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .add-task input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--text-dark);
+  }
+  
+  .add-task input::placeholder {
+    color: #a0a0a0;
+  }
+  
+  .add-task button {
+    padding: 10px 16px;
+    background-color: var(--accent-cyan);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-task button:hover {
+    background-color: #00b8e0;
+  }
+  
+  /* Task list items */
+  #taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: #fafafa;
+    border: 1px solid rgba(0,0,0,0.05);
+    font-size: 1rem;
+    color: var(--text-dark);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  #taskList li:hover {
+    background-color: #f0f8ff;
+    transform: translateY(-2px);
+  }
+  
+  #taskList li.completed {
+    color: #a0a0a0;
+    text-decoration: line-through;
+  }
+  
+  /* Delete button in list item */
+  #taskList li button {
+    padding: 6px 12px;
+    background-color: #d63031;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #taskList li button:hover {
+    background-color: #b82828;
+  }
+  
+  /* ========== FOOTER ========== */
+  footer {
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 0.9rem;
+    color: #777;
+    background-color: var(--card-bg);
+    border-top: 1px solid rgba(0,0,0,0.05);
+  }
+  

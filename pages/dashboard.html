@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intern Task Tracker Dashboard</title>
+  <link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+
+<body>
+  
+  <header class="navbar">
+    <div class="logo">Intern Task Tracker</div>
+
+    <div class="user-profile">
+      <img src="../img/Snapchat-1589518198.jpg" alt="User Profile" />
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </header>
+
+  
+  <main class="dashboard-container">
+
+    <!-- Welcome Section -->
+    <section class="welcome-card">
+      <h2>Welcome, <span id="userName"></span></h2>
+      <p>Here's a summary of your daily tasks. Stay productive!</p>
+    </section>
+
+    <!-- Task Section -->
+    <section class="task-section">
+      <div class="task-header">
+        <h3>My Tasks</h3>
+        <div class="add-task">
+          <input type="text" id="taskInput" placeholder="Enter new task..." />
+          <button id="addTaskBtn">Add Task</button>
+        </div>
+      </div>
+
+      <!-- Task List -->
+      <ul id="taskList">
+        <!-- Tasks will appear here dynamically -->
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <p>&copy; 2025 Del | Intern Task Tracker</p>
+  </footer>
+
+  <script src="../js/auth.js"></script>
+  <script src="../js/dashboard.js"></script>  
+</body>
+</html>

@@ -1,0 +1,106 @@
+/* ======== AUTH PAGE GLOBAL STYLES ======== */
+:root {
+  --primary-blue: #0984e3;
+  --blue-light: #74b9ff;
+  --text-dark: #2d3436;
+  --bg-light: #f5f6fa;
+  --card-bg: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--bg-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ======== CONTAINER ======== */
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* ======== CARD ======== */
+.auth-card {
+  background-color: var(--card-bg);
+  box-shadow: 0 5px 20px var(--shadow);
+  border-radius: 16px;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.auth-card h1 {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.auth-card h2 {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+/* ======== FORM ======== */
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-card input {
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--text-dark);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.auth-card input:focus {
+  border-color: var(--primary-blue);
+}
+
+/* ======== BUTTON ======== */
+.auth-card button {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-card button:hover {
+  background-color: var(--blue-light);
+  transform: translateY(-2px);
+}
+
+/* ======== LINK & TEXT ======== */
+.auth-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.auth-card a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-card a:hover {
+  text-decoration: underline;
+}
