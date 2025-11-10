@@ -206,4 +206,111 @@
     background-color: var(--card-bg);
     border-top: 1px solid rgba(0,0,0,0.05);
   }
+
+  /* ======== RESPONSIVE */
+  /* ====== Dashboard responsive ====== */
+
+/* Tablets and small screens */
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #dashboardContainer {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  #taskInput, #newTaskInput, #taskInputHeader,
+  #addTaskBtn, #addTaskButton, #addTaskBtnHeader {
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  #taskList li {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+  }
+
+  #taskList li div {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  #taskList li button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+/* Phones (very small screens) */
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+
+  #dashboardContainer {
+    width: 95%;
+  }
+  #taskInput, #newTaskInput, #taskInputHeader,
+  #addTaskBtn, #addTaskButton, #addTaskBtnHeader {
+    width: 100%;   /* stacked full-width on phones */
+    font-size: 0.9rem;
+    padding: 10px;
+    margin-left: 0;
+  }
+
+  #taskList li {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px;
+  }
+
+  #taskList li div {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  #taskList li button {
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+
+  /* @media (max-width: 768px) {
+    #taskList li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #taskList li div {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  
+    #taskList li button {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #taskList li button {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  
+    #taskInput, #addTaskBtn {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+   */
   

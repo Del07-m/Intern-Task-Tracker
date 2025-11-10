@@ -104,3 +104,24 @@ body {
 .auth-card a:hover {
   text-decoration: underline;
 }
+/* ========= RESPONSIVE ============= */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 28px 18px;
+    border-radius: 12px;
+  }
+
+  .auth-card h1 {
+    font-size: 1.4rem;
+  }
+
+  .auth-card h2 {
+    font-size: 1rem;
+  }
+
+  .auth-container {
+    padding: 12px;
+  }
+}
+
+
