@@ -134,7 +134,7 @@
         const users = loadUsers();
   
         if (!users[email]) {
-          alert("If the email exists, we’ll send a reset link (demo mode).");
+          alert("If the email exists, we'll send a reset link (demo mode).");
         }
   
         const token = randToken(16);
@@ -142,7 +142,7 @@
         localStorage.setItem("itt_last_reset_token", token);
   
         alert("Password reset link created (demo). Redirecting to reset page...");
-        window.location.href = "pages/resetpassword.html";
+        window.location.href = "./resetpassword.html";
       });
     }
   
